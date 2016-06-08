@@ -6,26 +6,178 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="main.css">
+    <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   </head>
 
-  <body>
-  	<div class="container-fluid bg-1 text-center">
-			<h3>I'm Katie</h3>
-			<img src="img/me.jpg" class="img-circle" alt="Bird" style="max-height: 500px;">
-			<h3>I'm an adventurer</h3>
+	<body id="page" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+		<!-- Navbar -->
+  	<nav class="navbar navbar-inverse navbar-fixed-top">
+		  <div class="container">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span> 
+		      </button>
+		      <a class="navbar-brand" href="#me">Me</a>
+		    </div>
+		    <div class="collapse navbar-collapse" id="myNavbar">
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="#about">About</a></li>
+		        <li><a href="#projects">Projects</a></li>
+		        <li><a href="#resume">Resume</a></li>
+		        <li><a href="#contact">Contact</a></li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+
+		<!-- Me -->
+  	<div class="container-fluid bg-1 text-center" id="me">
+  		<div class="col-md-6">
+				<img src="img/me.jpg" class="img-circle"  id="me-pic" style="max-height: 300px;">
+			</div>
+  		<div class="col-md-6">
+				<h1>I'm Katie</h1>
+				<h3>Welcome to my website. Scroll down to learn about me.</h3>
+			</div>
 		</div>
 
-		<div class="container-fluid bg-2 text-center">
-		  <h3>What Am I?</h3>
-		  <p>Lorem ipsum..</p>
+		<!-- About -->
+		<div class="container-fluid bg-2 text-center" id="about">
+			<h2>About Me</h2>
+			<ul id="about-list">
+				<li><h3>I'm a rising senior at MIT studying Computer Science and minoring in Statistics and Data Science.</h3></li>
+				<li><h3>I was born and raised in Greenwich Village in New York City.</h3></li>
+				<li><h3>I've spent the past two summers interning at Google.</h3></li>
+			</ul>
 		</div>
 
-		<div class="container-fluid bg-3 text-center">
-		  <h3>Where To Find Me?</h3>
-		  <p>Lorem ipsum..</p>
+		<!-- Projects -->
+		<div class="container-fluid bg-1 text-center" id="projects">
+		  <h2>Projects</h2>
+		  <br>
+		  <div class="row">
+		  	<!-- GiverGram -->
+		    <div class="col-sm-4">
+		      <span class="glyphicon glyphicon-gift"></span>
+		      <h4 class="project" data-toggle="modal" data-target="#givergram-modal">GiverGram</h4>
+		      <p>Making gift giving easier for grandmothers</p>
+		      <div id="givergram-modal" class="modal fade" role="dialog">
+		      	<div class="modal-dialog">
+		      		<div class="modal-content">
+		      			<div class="modal-header">
+		      				<button type="button" class="close" data-dismiss="modal">&times;</button>
+        					<h4 class="modal-title">GiverGram</h4>
+        				</div>
+        				<div class="modal-body">
+        					<p>GiverGram was a group project I made for my User Interface Design class (6.813). Check it out <a href="http://smdunn.github.io/813/">here</a>.</p>
+        				</div>
+        				<div class="modal-footer">
+					        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					    </div>
+					</div>
+				</div>
+		      </div>
+		    </div>
+		    <!-- UglyFruit -->
+		    <div class="col-sm-4">
+		      <span class="glyphicon glyphicon-apple"></span>
+		      <h4 class="project" data-toggle="modal" data-target="#uglyfruit-modal">UglyFruit</h4>
+		      <p>Reducing food waste to help end hunger.</p>
+		      <div id="uglyfruit-modal" class="modal fade" role="dialog">
+		      	<div class="modal-dialog">
+		      		<div class="modal-content">
+		      			<div class="modal-header">
+		      				<button type="button" class="close" data-dismiss="modal">&times;</button>
+        					<h4 class="modal-title">UglyFruit</h4>
+        				</div>
+        				<div class="modal-body">
+        					<p>UglyFruit was a group project I made for my Data Storytelling class (CMS.631). Check it out <a href="http://aneeshusa.gitlab.io/uglyfruit/">here</a>.</p>
+        				</div>
+        				<div class="modal-footer">
+					        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					    </div>
+					</div>
+				</div>
+		      </div>
+		    </div>
+		    <!-- Probability Matching -->
+		    <div class="col-sm-4">
+		      <span class="glyphicon glyphicon-stats"></span>
+		      <h4>Experimental Exploration of Probability Matching Behavior</h4>
+		      <p>Lorem ipsum dolor sit amet..</p>
+		    </div>
+		    </div>
+		    <br><br>
+		  <div class="row">
+		  	<!-- Pitstoppr -->
+		    <div class="col-sm-4">
+		      <span class="glyphicon glyphicon-map-marker"></span>
+		      <h4>Pitstoppr</h4>
+		      <p>Lorem ipsum dolor sit amet..</p>
+		    </div>
+		    <!-- Digital Reputation Systems -->
+		    <div class="col-sm-4">
+		      <span class="glyphicon glyphicon-edit"></span>
+		      <h4>Economic Implications of Digital Reputation Systems</h4>
+		      <p>Lorem ipsum dolor sit amet..</p>
+		    </div>
+		    <div class="col-sm-4">
+		      <span class="glyphicon glyphicon-wrench"></span>
+		      <h4>BLAH</h4>
+		      <p>Lorem ipsum dolor sit amet..</p>
+		    </div>
+		  </div>
 		</div>
 
+		<!-- Resume -->
+		<div class="container-fluid bg-2 text-center" id="resume">
+			<h2>Resume</h2><br>
+			<form method="get" action="KatherineMarloweResumeSpring2016.pdf"><button class="btn" type="submit">View</button></form>
+		</div>
+
+		<!-- Contact Me -->
+		<div class="container-fluid bg-1 text-center" id="contact">
+			<h2>Contact Me</h2><br>
+			<h5>708 Greenwich St. #2D</h5>
+			<h5>New York, NY 10014</h5><br>
+			<a href="mailto:kpvm@mit.edu"><h4>kpvm@mit.edu</h4></a>
+		</div>
+
+		<footer class="container-fluid bg-3 text-center">
+		  <p>Copyright © 2016 by Katie Marlowe</a></p> 
+		</footer>
+
+		<script>
+		$(document).ready(function(){
+		  // Add smooth scrolling to all links in navbar + footer link
+		  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+		   // Make sure this.hash has a value before overriding default behavior
+		  if (this.hash !== "") {
+
+		    // Prevent default anchor click behavior
+		    event.preventDefault();
+
+		    // Store hash
+		    var hash = this.hash;
+
+		    // Using jQuery's animate() method to add smooth page scroll
+		    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+		    $('html, body').animate({
+		      scrollTop: $(hash).offset().top
+		    }, 900, function(){
+
+		      // Add hash (#) to URL when done scrolling (default click behavior)
+		      window.location.hash = hash;
+		      });
+		    } // End if
+		  });
+		})
+		</script>
 	</body>
 </html>
