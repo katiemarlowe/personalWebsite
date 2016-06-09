@@ -1,6 +1,13 @@
 body {
     font: 400 15px Noto Sans, sans-serif;
 }
+.navbar-inverse .navbar-nav>.active>a, 
+.navbar-inverse .navbar-nav>.active>a:focus, 
+.navbar-inverse .navbar-nav>.active>a:hover {
+    background-color: transparent;
+    color: #F4DECB;
+    font-weight: bold;
+}
 .bg-1 { 
     background-color: #94618E;
     color: #ffffff;
