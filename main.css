@@ -69,10 +69,10 @@ body {
     font-size: 16px;
 }
 a:link, a:visited { 
-    color: white;
-    text-decoration: none;
+    color: #49274A;
+    text-decoration: underline;
     cursor: auto;
 }
 a:hover { 
-    color: #49274A;
+    color: #94618E;
 }
